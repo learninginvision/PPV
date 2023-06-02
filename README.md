@@ -1,7 +1,7 @@
 # Fast and Robust Circular Object Detection with Probabilistic Pairwise Voting
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/proposed%20method.png" alt="image-20230411104631752" width="950" />
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/proposed_method.png" alt="image-20230411104631752" width="950" />
 </div>
  
 These are official codes for the paper [*Fast and Robust Circular Object Detection With Probabilistic Pairwise Voting*](https://ieeexplore.ieee.org/document/6008626). In this paper, we propose a new detection method for circular objects - Probabilistic Pairwise Voting (PPV). Based on an extension of the Hough transform, this method utilizes the gradient information to produce projection lines in the *x-y-r* space. If the projection lines of two edge pixels intersect at one point, they belong to the same circle. Otherwise, they produce a hypothesis of a circle. The likelihood of each such hypothesis is modeled as a Gaussian distribution dependent on the distance between two projection lines, equal to the length of a line perpendicular to both projection lines. The score of a hypothesis is calculated by marginalization over all edge point pairs that contribute to the hypothesis.
