@@ -1,0 +1,12 @@
+Rmax: 100
+bandwidth: 25
+tao: 0.2
+k: 10
+
+canny_scale: 20
+canny_threshold_low: 3
+canny_threshold_high: 5
+
+sigma: 5
+
+color: 'green'
