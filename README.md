@@ -1,7 +1,7 @@
 # Fast and Robust Circular Object Detection with Probabilistic Pairwise Voting
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/Proposed%20method.png" alt="image-20230411104631752" width="950" />
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/proposed%20method.png" alt="image-20230411104631752" width="950" />
 </div>
  
 These are official codes for the paper [*Fast and Robust Circular Object Detection With Probabilistic Pairwise Voting*](https://ieeexplore.ieee.org/document/6008626). In this paper, we propose a new detection method for circular objects - Probabilistic Pairwise Voting (PPV). Based on an extension of the Hough transform, this method utilizes the gradient information to produce projection lines in the *x-y-r* space. If the projection lines of two edge pixels intersect at one point, they belong to the same circle. Otherwise, they produce a hypothesis of a circle. The likelihood of each such hypothesis is modeled as a Gaussian distribution dependent on the distance between two projection lines, equal to the length of a line perpendicular to both projection lines. The score of a hypothesis is calculated by marginalization over all edge point pairs that contribute to the hypothesis.
@@ -17,12 +17,12 @@ It has many advantages: robust against occlusions, noise, and moderate shape def
 Our method was tested on four representative natural images gathered from Google Image. Circular detection results on natural scenes. **(a)** Occlusion, **(b)** background clutter, **(c)** shape deformation, and **(d)** multiple circular objects.
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/Natural_results.png" alt="image-20230411105942277"  width="800" /> </div>
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/natural_results.png" alt="image-20230411105942277"  width="800" /> </div>
 
 Compared with three other circle detection algorithms CHT, RCD, and AMLE, PPV shows its superiority in terms of accuracy and the short time required.
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/Natural_table.png" alt="image-20230411111428191"  width="500" /> </div>
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/natural_table.png" alt="image-20230411111428191"  width="500" /> </div>
 
 
 
@@ -31,12 +31,12 @@ Compared with three other circle detection algorithms CHT, RCD, and AMLE, PPV sh
 This method was further tested on the challenging task of localizing the irides in face images from the CMU Multi-PIE face database. Our algorithm was robust to reflections from eyeglasses, and occlusion from eyelashes, eyelids, and hair.
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/Iris_results.png" alt="image-20230411112358346"  width="800" /> </div>
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/iris_results.png" alt="image-20230411112358346"  width="800" /> </div>
 
 Also, the effect of the parameter $\tau$ on the localization performance and the eye localization accuracy were evaluated respectively. The best performance was obtained for $\tau=0.4$. Our method has the most accurate results among all the methods due to the largest area under the curve.
 
 <div align=center>
-<img src="https://github.com/learninginvision/PPV/blob/main/pic/Iris_table.png" alt="image-20230411113425165"  width="600" /> </div>
+<img src="https://github.com/learninginvision/PPV/blob/main/pic/iris_table.png" alt="image-20230411113425165"  width="600" /> </div>
 
 
 
