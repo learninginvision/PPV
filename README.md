@@ -56,7 +56,7 @@ Pairwise_Voting:            include functions about Probabilistic Hough Transfor
 
 ## Supplementary Results
 
-More test results are provided here. The input images, the edge maps, and the detection results of our method are presented simultaneously.
+Some more test results are provided here. The input images, the edge maps, and the detection results of our method are presented simultaneously.
 
 Simple examples of detecting circular objects:
 
